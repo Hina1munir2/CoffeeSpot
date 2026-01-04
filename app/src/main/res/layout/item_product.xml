@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_app_logo"
+            android:contentDescription="Coffee Image"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coffee Name"
+            android:textSize="16sp"
+            android:textColor="@color/light_brown"
+            android:fontFamily="sans-serif-medium"
+            android:layout_below="@id/productImage"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$5.99"
+            android:textSize="18sp"
+            android:textColor="@color/light_brown"
+            android:fontFamily="sans-serif-bold"
+            android:layout_below="@id/productName"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/productDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rich espresso with steamed milk"
+            android:textSize="12sp"
+            android:textColor="#CCFFFFFF"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_below="@id/productPrice"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="4dp" />
+
+        <ImageButton
+            android:id="@+id/likeButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_favourite_border"
+            android:background="@android:color/transparent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/productName"
+            android:contentDescription="Like" />
+
+        <Button
+            android:id="@+id/addToCartButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add to Cart"
+            android:textSize="14sp"
+            android:backgroundTint="@color/light_brown"
+            android:textColor="@color/dark_brown"
+            android:layout_below="@id/productDescription"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

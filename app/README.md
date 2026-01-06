@@ -1,6 +1,6 @@
 # ☕ Coffee Ordering Android App
 
-This is a **full-featured Coffee Ordering Android Application** developed using **Kotlin** in **Android Studio**.  
+This is a **full-featured Coffee Ordering Android Application** developed using **java** in **Android Studio**.  
 The app provides a complete coffee shopping experience including **user authentication, product browsing, cart management, ordering, and payment confirmation**.
 
 Firebase is integrated for **Login, Signup, Password Reset, and Authentication**.
@@ -43,7 +43,7 @@ Orders & Checkout
 
 ## 🛠️ Tech Stack
 
-- **Language:** Kotlin  
+- **Language:** java
 - **IDE:** Android Studio  
 - **UI:** XML Layouts  
 - **Backend:** Firebase Authentication  
@@ -85,7 +85,7 @@ How to Use
 10. Access **Orders**, **Wishlist**, **Profile**, and **Settings** from the menu.
 
  Technologies Used
-- **Kotlin** – Primary programming language for Android development  
+- **java** – Primary programming language for Android development  
 - **XML** – Used for designing user interface layouts  
 - **Android Studio** – Official IDE for Android app development  
 - **Firebase Authentication** – User login, signup, and password recovery  
